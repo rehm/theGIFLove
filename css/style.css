@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+/* image container start */
+#gif .img-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#gif .img-container img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/* image container end */
+
+/* countdown element start */
+#gif .countdown {
+    z-index: 3;
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    line-height: 128px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+/* countdown element end */
+
+/* spinner start */
+/* from http://tobiasahlin.com/spinkit/ */
+#gif .active.spinner-wrapper {
+    display: none;
+}
+
+#gif .spinner-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 4;
+}
+
+#gif .spinner-wrapper .spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    margin: -128px 0 0 -128px;
+
+    width: 256px;
+    height: 256px;
+    text-align: center;
+    font-size: 10px;
+
+    z-index: 5;
+}
+
+#gif .spinner-wrapper .spinner > div {
+    background-color: red;
+    height: 100%;
+    width: 32px;
+    display: inline-block;
+    margin: 2px;
+
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+
+    z-index: 5;
+}
+
+#gif .spinner-wrapper .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+
+    z-index: 5;
+}
+
+#gif .spinner-wrapper .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+
+    z-index: 5;
+}
+
+#gif .spinner-wrapper .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+
+    z-index: 5;
+}
+
+#gif .spinner-wrapper .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+
+    z-index: 5;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
+}
+/* spinner end */

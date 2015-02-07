@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>theGifLove()</title>
+</head>
+<body>
+
+<div id="gif">
+</div>
+
+<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/gif.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('#gif').initGif({
+			timeout: 15,
+			blogName: 'YOUR_BLOG',
+			appKey: 'YOUR_KEY'
+		});
+	});
+</script>
+
+</body>
+</html>
